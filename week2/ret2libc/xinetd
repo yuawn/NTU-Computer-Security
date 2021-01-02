@@ -1,0 +1,15 @@
+service ret2libc
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/ret2libc/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = ret2libc
+        port = 4597
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

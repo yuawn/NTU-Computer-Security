@@ -1,0 +1,34 @@
+version: '2'
+services:
+  rop: 
+   build: ./rop/
+   volumes:
+    - ./rop/share:/home/rop:ro
+    - ./rop/xinetd:/etc/xinetd.d/rop:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10173:4597"
+  ret2plt: 
+   build: ./ret2plt/
+   volumes:
+    - ./ret2plt/share:/home/ret2plt:ro
+    - ./ret2plt/xinetd:/etc/xinetd.d/ret2plt:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10174:4597"
+  ret2libc: 
+   build: ./ret2libc/
+   volumes:
+    - ./ret2libc/share:/home/ret2libc:ro
+    - ./ret2libc/xinetd:/etc/xinetd.d/ret2libc:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10175:4597"
+  casino_pro: 
+   build: ./casino++/
+   volumes:
+    - ./casino++/share:/home/casino++:ro
+    - ./casino++/xinetd:/etc/xinetd.d/casino++:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10176:4597"

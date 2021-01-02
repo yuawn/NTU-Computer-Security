@@ -1,0 +1,26 @@
+version: '2'
+services:
+  bof: 
+   build: ./bof/
+   volumes:
+    - ./bof/share:/home/bof:ro
+    - ./bof/xinetd:/etc/xinetd.d/bof:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10170:4597"
+  orw: 
+   build: ./orw/
+   volumes:
+    - ./orw/share:/home/orw:ro
+    - ./orw/xinetd:/etc/xinetd.d/orw:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10171:4597"
+  casino: 
+   build: ./casino/
+   volumes:
+    - ./casino/share:/home/casino:ro
+    - ./casino/xinetd:/etc/xinetd.d/casino:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10172:4597"

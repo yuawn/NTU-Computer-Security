@@ -1,0 +1,15 @@
+service rop
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/rop/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = rop
+        port = 4597
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

@@ -1,0 +1,15 @@
+service note++
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/note++/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = note++
+        port = 4597
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

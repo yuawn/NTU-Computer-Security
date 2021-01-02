@@ -1,0 +1,15 @@
+service orw
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/orw/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = orw
+        port = 4597
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

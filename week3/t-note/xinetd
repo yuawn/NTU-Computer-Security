@@ -1,0 +1,15 @@
+service t-note
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/t-note/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = t-note
+        port = 4597
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

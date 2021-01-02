@@ -1,0 +1,42 @@
+version: '2'
+services:
+  uaf: 
+   build: ./uaf/
+   volumes:
+    - ./uaf/share:/home/uaf:ro
+    - ./uaf/xinetd:/etc/xinetd.d/uaf:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10177:4597"
+  note: 
+   build: ./note/
+   volumes:
+    - ./note/share:/home/note:ro
+    - ./note/xinetd:/etc/xinetd.d/note:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10178:4597"
+  t-note: 
+   build: ./t-note/
+   volumes:
+    - ./t-note/share:/home/t-note:ro
+    - ./t-note/xinetd:/etc/xinetd.d/t-note:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10179:4597"
+  election: 
+   build: ./election/
+   volumes:
+    - ./election/share:/home/election:ro
+    - ./election/xinetd:/etc/xinetd.d/election:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10180:4597"
+  note_pro: 
+   build: ./note++/
+   volumes:
+    - ./note++/share:/home/note++:ro
+    - ./note++/xinetd:/etc/xinetd.d/note++:ro
+    - ./tmp:/tmp:ro
+   ports:
+    - "10181:4597"
