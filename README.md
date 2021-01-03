@@ -65,6 +65,6 @@ docker-compose up -d
 ### Compile (如需自行重編題目 binary)
 
 ```bash
-apt install libseccomp-dev
+sudo apt install libseccomp-dev
 make
 ```
