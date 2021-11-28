@@ -4,8 +4,8 @@
 ## 課程內容
 ### Week 1: Binary Exploitation - Basic
 
-- Slide: [link](https://speakerdeck.com/yuawn/binary-exploitation-basic)  
-- Video: [link](https://youtu.be/U8N6aE-Nq-Q)
+- Slide: [speakerdeck.com/yuawn/binary-exploitation-basic](https://speakerdeck.com/yuawn/binary-exploitation-basic)  
+- Video: [youtu.be/U8N6aE-Nq-Q](https://youtu.be/U8N6aE-Nq-Q)
 - Lab:
     - [bof](week1/exp/bof.py)
         - stack buffer overflow, overwrite return address
@@ -17,8 +17,8 @@
 
 ### Week 2: Binary Exploitation
 
-- Slide: [link](https://speakerdeck.com/yuawn/binary-exploitation)  
-- Video: [link](https://youtu.be/5D7tvxpSUUM)
+- Slide: [speakerdeck.com/yuawn/binary-exploitation](https://speakerdeck.com/yuawn/binary-exploitation)  
+- Video: [youtu.be/5D7tvxpSUUM](https://youtu.be/5D7tvxpSUUM)
 - Lab:
     - [ROP](week2/exp/rop.py)
         - ROP bypass NX protection
@@ -32,8 +32,8 @@
 
 ### Week 3: Heap Exploitation
 
-- Slide: [link](https://speakerdeck.com/yuawn/heap-exploitation)  
-- Video: [link](https://youtu.be/rMqvL9j0QaM)
+- Slide: [speakerdeck.com/yuawn/heap-exploitation](https://speakerdeck.com/yuawn/heap-exploitation)  
+- Video: [youtu.be/rMqvL9j0QaM](https://youtu.be/rMqvL9j0QaM)
 - Lab:
     - [UAF](week3/exp/uaf.py)
         - Practice using UAF to leak address and exploit.
